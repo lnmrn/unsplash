@@ -4,9 +4,14 @@ const AppContext = createContext();
 
 function GlobalProvider({ children }) {
   const [isDarkTheme, setDarkTheme] = useState(false);
+
   function toggleDarkTheme() {
-    setDarkTheme((d) => !d);
+    const newTheme = !isDarkTheme;
+    setDarkTheme(newTheme);
+    const body = document.querySelector("body");
+    body.classList.toggle("dark-theme", newTheme);
   }
+
   return (
     <AppContext.Provider value={{ isDarkTheme, toggleDarkTheme }}>
       {children}
