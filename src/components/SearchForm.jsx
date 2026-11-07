@@ -1,8 +1,11 @@
 function SearchForm() {
   return (
-    <form>
-      <input type="text" />
-    </form>
+    <section>
+      <h1 className="title">Unsplash</h1>
+      <form>
+        <input type="text" />
+      </form>
+    </section>
   );
 }
 
