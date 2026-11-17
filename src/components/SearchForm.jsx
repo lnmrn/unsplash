@@ -6,7 +6,7 @@ function SearchForm() {
   }
   return (
     <section>
-      <h1 className="title">Unsplash</h1>
+      <h1 className="title">UNSPLASH</h1>
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
