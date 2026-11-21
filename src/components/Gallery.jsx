@@ -4,7 +4,7 @@ import Loader from "./Loader";
 import ErrorCmp from "./ErrorCmp";
 import GalleryItem from "./GalleryItem";
 
-const url = `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_ACCESS_KEY}&query=office`;
+const url = `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_ACCESS_KEY}&query=`;
 
 function Gallery() {
   const {

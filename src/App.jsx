@@ -4,7 +4,7 @@ import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   return (
-    <main>
+    <main className="main">
       <ThemeToggle />
       <SearchForm />
       <Gallery />
