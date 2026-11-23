@@ -317,8 +317,7 @@ ul {
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
+  width: 300px;
 }
 
 .search-form .btn {

@@ -4,6 +4,7 @@ const AppContext = createContext();
 
 function GlobalProvider({ children }) {
   const [isDarkTheme, setDarkTheme] = useState(false);
+  const [query, setQuery] = useState("");
 
   function toggleDarkTheme() {
     const newTheme = !isDarkTheme;
@@ -13,7 +14,9 @@ function GlobalProvider({ children }) {
   }
 
   return (
-    <AppContext.Provider value={{ isDarkTheme, toggleDarkTheme }}>
+    <AppContext.Provider
+      value={{ isDarkTheme, toggleDarkTheme, query, setQuery }}
+    >
       {children}
     </AppContext.Provider>
   );

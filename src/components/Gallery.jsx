@@ -3,22 +3,25 @@ import axios from "axios";
 import Loader from "./Loader";
 import ErrorCmp from "./ErrorCmp";
 import GalleryItem from "./GalleryItem";
-
-const url = `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_ACCESS_KEY}&query=`;
+import { useGlobalContext } from "../GlobalContext";
 
 function Gallery() {
+  const { query } = useGlobalContext();
   const {
     data: { results },
     isLoading,
     isError,
   } = useQuery({
-    queryKey: ["images"],
+    queryKey: ["images", query],
     queryFn: async () => {
+      const url = `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_ACCESS_KEY}&query=${query}`;
       const res = await axios.get(url);
       return res.data;
     },
+    enabled: !!query,
     initialData: [],
   });
+  if (results?.length < 1) return "No results found. Try again.";
   if (isLoading) return <Loader />;
   if (isError) return <ErrorCmp isError={isError} />;
 
