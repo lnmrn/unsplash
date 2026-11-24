@@ -208,7 +208,7 @@ ul {
 .form {
   width: 90vw;
   max-width: var(--fixed-width);
-  background: var(--white);
+  background: var(--textColor);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 2rem 2.5rem;
@@ -413,13 +413,13 @@ ul {
 }
 
 .unsplash {
-  position: absolute;
+  position: fixed;
   width: 250px;
   height: 250px;
   top: 100px;
   left: 50px;
   font-family: "Bangers";
-  color: var(--black);
+  color: var(--textColor);
   letter-spacing: 1px;
   text-align: center;
   border: 2px solid var(--primary-600);
