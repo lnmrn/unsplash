@@ -1,3 +1,4 @@
+import Arrow from "./components/Arrow";
 import Gallery from "./components/Gallery";
 import SearchForm from "./components/SearchForm";
 import ThemeToggle from "./components/ThemeToggle";
@@ -10,6 +11,7 @@ function App() {
       <ThemeToggle />
       <SearchForm />
       <Gallery />
+      <Arrow />
     </main>
   );
 }
