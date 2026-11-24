@@ -9,6 +9,7 @@ function SearchForm() {
     const searchValue = e.target.elements.search.value;
     if (!searchValue) return;
     setQuery(inputValue);
+    setInputValue("");
   }
 
   return (
@@ -19,7 +20,7 @@ function SearchForm() {
           type="text"
           className="form-input search-input"
           name="search"
-          placeholder="dog"
+          placeholder="Start typing..."
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />

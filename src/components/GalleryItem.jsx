@@ -1,9 +1,5 @@
 function GalleryItem({ url }) {
-  return (
-    <div className="image-container">
-      <img src={url} />
-    </div>
-  );
+  return <img src={url} className="image" />;
 }
 
 export default GalleryItem;
