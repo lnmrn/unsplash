@@ -398,6 +398,17 @@ ul {
     box-shadow 0.15s ease;
 }
 
+.unsplash.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.unsplash.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .unsplash:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
@@ -458,8 +469,8 @@ ul {
   .unsplash {
     width: 100px;
     height: 110px;
-    top: 12px;
-    left: 12px;
+    top: 8px;
+    left: 8px;
     font-family: "Bangers";
     color: var(--textColor);
     letter-spacing: 1px;
