@@ -18,7 +18,7 @@ function SearchForm() {
       <form className="search-form" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="form-input search-input"
+          className="form-input"
           name="search"
           placeholder="Start typing..."
           value={inputValue}

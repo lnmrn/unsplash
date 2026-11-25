@@ -30,10 +30,10 @@ function Gallery() {
       <h4>
         {isLoading && <Loader />}
         {isError && <ErrorCmp isError={isError} />}
-        {results?.map((result) => (
-          <GalleryItem key={result.id} url={result.urls.regular} />
-        ))}
       </h4>
+      {results?.map((result) => (
+        <GalleryItem key={result.id} url={result.urls.regular} />
+      ))}
     </section>
   );
 }
