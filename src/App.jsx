@@ -12,6 +12,10 @@ function App() {
       <SearchForm />
       <Gallery />
       <Arrow />
+      <footer className="footer">
+        Design is copyright &copy; of Dishpet. No AI was used in making of this
+        small app.
+      </footer>
     </main>
   );
 }
